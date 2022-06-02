@@ -1,4 +1,4 @@
-# portfolio
+# Portfolio
 
 This is my first project with Academlo.
 
