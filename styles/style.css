@@ -202,6 +202,50 @@ body{
     align-items: center;
 }
 
+/* Contact */
+.contact{
+    position: relative;
+    margin-top: 100px;
+}
+
+.contact-data{
+    display: inline-block;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contact-data > img{
+    align-items: center;
+    column-gap: 150px;
+    background-color: var(--pinky);
+    border-radius: 30px;
+    width: 128px;
+    height: 128px;
+    padding: 30px;
+}
+
+.contact-data-title{
+    font-size: large;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.contact-data-info{
+    margin-top: 30px;
+    color: var(--darklight);
+}
+
+/* Footer */
+.footer{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: x-large;
+    color: var(--violet);
+    clear: both;
+}
+
+
 /* for the hamburger menu (mobile)*/
 @media only screen and (max-width:800px) {
     .nav > .nav-btn{
