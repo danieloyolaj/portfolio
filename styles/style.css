@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 *::before, *::after{
@@ -30,6 +31,7 @@ body{
     align-items: center;
     justify-content: center;
     background: var(--white);
+    
 }
 
 .subtitle{
@@ -41,6 +43,7 @@ body{
 
 /* styles for the container */
 .container{
+    margin: 0 auto;
     width: 70%;
     padding: 25px 30px;
     overflow: hidden;
@@ -163,7 +166,7 @@ body{
 
 .card{
     max-width: 270px;
-    height: 320px;
+    min-height: 320px;
     display: inline-block;
     margin-top: 30px;
     margin-left: 60px;
@@ -188,7 +191,29 @@ body{
 /* My Experience */
 .experience{
     margin-top: 100px;
-    
+}
+
+.card-experience{
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.card-experience-info{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 25px;
+    margin-left: 25px;
+    color: rgb(192, 192, 192);
+}
+
+.card-experience-year{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.card-experience > img{
+    width: 64px;
+    margin-left: 50px;
 }
 
 /* Portfolio */
@@ -196,9 +221,12 @@ body{
     margin-top: 100px;
 }
 
+.portfolio-container{
+    margin: 50px auto;
+}
+
 .img-portfolio{
     display: inline;
-    margin: 50px 5px 5px 10px;
     align-items: center;
 }
 
@@ -206,6 +234,7 @@ body{
 .contact{
     position: relative;
     margin-top: 100px;
+    text-align: center;
 }
 
 .contact-data{
@@ -216,12 +245,12 @@ body{
 
 .contact-data > img{
     align-items: center;
-    column-gap: 150px;
     background-color: var(--pinky);
     border-radius: 30px;
     width: 128px;
     height: 128px;
     padding: 30px;
+    margin: 0 100px 50px;
 }
 
 .contact-data-title{
@@ -232,7 +261,7 @@ body{
 
 .contact-data-info{
     margin-top: 30px;
-    color: var(--darklight);
+    color: rgb(192, 192, 192);
 }
 
 /* Footer */
@@ -371,5 +400,11 @@ img{
     height: auto;
 }
 
-
+.go-up{
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    bottom: 40px;
+    right: 50px;
+}
 

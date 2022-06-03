@@ -21,11 +21,11 @@
         <div class="nav-bar">
             <ul>
                 <li class="menu-items"><a href="#" class="active">Inicio</a></li>
-                <li class="menu-items"><a href="#">Acerca de m&iacute;</a></li>
-                <li class="menu-items"><a href="#">Mis habilidades</a></li>
-                <li class="menu-items"><a href="#">Experiencia</a></li>
-                <li class="menu-items"><a href="#">Portafolio</a></li>
-                <li class="menu-items"><a href="#">Contacto</a></li>
+                <li class="menu-items"><a href="#acerca-de-mi">Acerca de m&iacute;</a></li>
+                <li class="menu-items"><a href="#mis-habilidades">Mis habilidades</a></li>
+                <li class="menu-items"><a href="#mi-experiencia">Experiencia</a></li>
+                <li class="menu-items"><a href="#mi-portafolio">Portafolio</a></li>
+                <li class="menu-items"><a href="#contacto">Contacto</a></li>
             </ul>
         </div><!-- nav-bar -->
     </div><!-- nav -->
@@ -51,7 +51,7 @@
         
     </section><!-- section flex container -->
         <div class="about-me">
-            <h1 class="subtitle">Acerca de mí</h1>
+            <h1 id="acerca-de-mi" class="subtitle">Acerca de mí</h1>
             
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
@@ -62,7 +62,7 @@
             </p>
         </div><!-- div about-me -->
         <div class="my-skills">
-            <h1 class="subtitle">Mis habilidades</h1>
+            <h1 id="mis-habilidades" class="subtitle">Mis habilidades</h1>
             <div class="card">
                 <h2><img class="my-skills-icons" src="/images/layer1.svg" alt="icon-Ipad"/>UX/UI Design</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
@@ -86,43 +86,60 @@
             </div>
         </div><!-- div my-skills -->
         <div class="experience">
-            <h1 class="subtitle">Experiencia</h1>
-            <div class="card-experience">
-                <img src="/images/ant-design_amazon-outlined.svg" alt="" srcset="">
-                <h3>UI Designer</h3>
-                <p>2015-2017</p>
-                <h3>2 a&ntilde;os</h3>
-            </div>
-            <div class="card-experience">
-                <img src="/images/bi_spotify.svg" alt="" srcset="">
-                <h3>Spotify</h3>
-                <p>Senior Js</p>
-                <p>2018</p>
-                <h3>1 a&ntilde;o</h3>
-            </div>
-            <div class="card-experience">
-                <img src="/images/akar-icons_google-fill.svg" alt="" srcset="">
-                <h3>Google</h3>
-                <p>Cief Executive Officer</p>
-                <p>2019 a la fecha</p>
-                <h3>3 a&ntilde;os</h3>
+            <h1 id="mi-experiencia" class="subtitle">Experiencia</h1>
+            <div class="experience-container">
+                <div class="card-experience">
+                    <img src="/images/amazon-icon.svg" alt="" srcset="">
+                    <div class="card-experience-info">
+                        <h3>UI Designer</h3>
+                        <p>2015-2017</p>
+                        
+                    </div>
+                    <div class="card-experience-year">
+                        <h3>2 a&ntilde;os</h3>
+                    </div>
+                </div>
+                <div class="card-experience">
+                    <img src="/images/spotify-icon.svg" alt="" srcset="">
+                    <div class="card-experience-info">
+                        <h3>Spotify</h3>
+                        <p>Senior Js</p>
+                        <p>2018</p>
+                    </div>
+                    <div class="card-experience-year">
+                        <h3>1 a&ntilde;o</h3>
+                    </div>
+                </div>
+                <div class="card-experience">
+                    <img src="/images/google-icon.svg" alt="" srcset="">
+                    <div class="card-experience-info">
+                        <h3>Google</h3>
+                        <p>Cief Executive Officer</p>
+                        <p>2019 a la fecha</p>
+                    </div>
+                    <div class="card-experience-year">
+                        <h3>3 a&ntilde;os</h3>
+                    </div>
+                </div>
             </div>
         </div><!-- div experience -->
+        
         <div class="portfolio">
-            <h1 class="subtitle">Portafolio</h1>
-            <div class="img-portfolio">
-                <img src="/images/Rectangle 48.jpg" alt="" srcset="">
+            <h1 id="mi-portafolio" class="subtitle">Portafolio</h1>
+            <div class="portfolio-container">
+                <div class="img-portfolio">
+                    <img src="/images/Rectangle 48.jpg" alt="" srcset="">
+                </div>
+                <div class="img-portfolio">
+                    <img src="/images/Rectangle 49.jpg" alt="" srcset="">
+                </div>
+                <div class="img-portfolio">
+                    <img src="/images/Rectangle 59.jpg" alt="" srcset="">
+                </div>
             </div>
-            <div class="img-portfolio">
-                <img src="/images/Rectangle 49.jpg" alt="" srcset="">
-            </div>
-            <div class="img-portfolio">
-                <img src="/images/Rectangle 59.jpg" alt="" srcset="">
-            </div>
-            
         </div><!-- div portfolio -->
         <div class="contact">
-            <h1 class="subtitle">Contacto</h1>
+            <h1 id="contacto" class="subtitle">Contacto</h1>
             <div class="flex-container">
                 <div class="contact-data">
                     <img src="/images/phone 3.svg" alt="Numero celular" srcset="">
@@ -140,7 +157,9 @@
             <p>Hecho con  &hearts; en Academlo</p>
         </div><!-- div footer -->
         </div>
+    <a href="#" class="go-up"><img src="/images/up.png" alt="Up button" /></a>
     </div> <!-- div container -->
+
     <script src="/scripts/script.js"></script>
 </body>
 </html>
