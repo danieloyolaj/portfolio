@@ -52,6 +52,45 @@ body{
     /* box-shadow: 0px 6px 15px var(--lightshadow); */
 }
 
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    display: inline-block;
+    float: none;
+    justify-content: right;
+}
+
+a{
+    display: inline-block;
+    padding: 10px;
+    padding-left: 20px;
+    text-decoration: none;
+    color: var(--dark);
+    font-size: 14px;
+}
+
+a:hover, .active{
+    color: var(--violetlight);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.go-up{
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    bottom: 40px;
+    right: 50px;
+    box-shadow: var(--lightshadow);
+}
+
 .nav{
     position: relative;
 }
@@ -275,15 +314,35 @@ body{
 }
 
 
-/* for the hamburger menu (mobile)*/
-@media only screen and (max-width:800px) {
+/* All mobile */
+@media only screen and (max-width:600px) {
+    
+    body{
+        display: block;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .container{
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    /* Go up button */
+    .go-up{
+        display: none;
+    }
+
+
+
+    /* for the hamburger menu (mobile)*/
     .nav > .nav-btn{
         display: inline-block;
         position: absolute;
         right: 0px;
         top: 0px;
     }
-
+    
     .nav > .nav-btn > label{
         display: inline-block;
         width: 50px;
@@ -345,8 +404,16 @@ body{
     }
 
     /*Header for mobile*/
+    .header{
+        display: flex;
+    }
+
+    .subtitle{
+        font-size: 2rem;
+    }
+
     .title{
-        font-size: 30px;
+        font-size: smaller;
     }
 
     .header > button{
@@ -367,44 +434,64 @@ body{
         margin: 5px;
         width: 64px;
     }
+
+    .about-me{
+        font-size: smaller;
+    }
+
+    /* My Skills */
+    .my-skills{
+        margin-top: 70px;
+        padding: 0;
+        display: block;
+    }
+    .card{
+        margin: 50px 0 0 0;
+        padding: 15px;
+        width: 100%;
+        text-align: center;
+        font-size: medium;
+    }
+
+    /* My Experience */
+    .card-experience{
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .card-experience img{
+        margin: 50px 0 10px 0;
+    }
+
+    .card-experience-info{
+        display: block;
+        text-align: center;
+    }
+    .card-experience-year{
+        display: block;
+        text-align: center;
+    }
+
+    /* Contact */
+    .contact-data img{
+        margin: 0;
+        padding: 40px;
+    }
+
+    .contact-data-title{
+        font-size: smaller;
+    }
+
+    .contact-data-info{
+        font-size: smaller;
+    }
+
+    /* Footer */
+    .footer{
+        
+        padding: 0;
+        margin: 50px;
+        font-size: smaller;
+    }
 }
-
-
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-li{
-    display: inline-block;
-    float: none;
-    justify-content: right;
-}
-
-a{
-    display: inline-block;
-    padding: 10px;
-    padding-left: 20px;
-    text-decoration: none;
-    color: var(--dark);
-    font-size: 14px;
-}
-
-a:hover, .active{
-    color: var(--violetlight);
-}
-
-img{
-    max-width: 100%;
-    height: auto;
-}
-
-.go-up{
-    position: fixed;
-    width: 70px;
-    height: 70px;
-    bottom: 40px;
-    right: 50px;
-}
-
