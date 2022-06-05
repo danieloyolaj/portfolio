@@ -161,7 +161,6 @@ img{
 
 .icon-media:hover{
     fill: var(--violet);
-    
 }
 
 .media-icons{
@@ -170,13 +169,6 @@ img{
 }
 
 .background-lines{
-    /* content: ''; */
-    /* position: absolute; */
-    /* top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px; */
-    /* opacity: 0.5; */
     background-image: url(/images/lines.svg);
     background-repeat: no-repeat;
     background-position: top center;
@@ -333,7 +325,7 @@ img{
         display: none;
     }
 
-
+  
 
     /* for the hamburger menu (mobile)*/
     .nav > .nav-btn{
@@ -378,9 +370,9 @@ img{
     }
 
     a{
-        font-size: xx-large;
+        font-size: large;
         width: 100%;
-        padding: 50px;
+        padding: 10px;
         margin: 0px;
     }
 
@@ -404,21 +396,37 @@ img{
     }
 
     /*Header for mobile*/
-    .header{
-        display: flex;
+    .header-container{
+        display: inline-block;
+        margin: 100px auto;
+        padding: 0;
     }
 
+    .header-container > .header > h1{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .header-container > .header > p{
+        font-size: larger;
+        text-align: center;
+    }
     .subtitle{
         font-size: 2rem;
     }
 
-    .title{
-        font-size: smaller;
+    .background-lines{
+        width: 85%;
     }
 
-    .header > button{
+    .header-button{
         margin-top: 30px;
-        font-size: 14px;
+    }
+
+    .header  button{
+        text-align: center;
+        padding: 15px;
+        margin: 30px;
         width: 200px;
     }
 
@@ -427,15 +435,17 @@ img{
     }
 
     .media-icons{
+        display: inline-block;
         text-align: center;
     }
 
     .icon-media{
-        margin: 5px;
+        margin: 10px;
         width: 64px;
     }
 
     .about-me{
+        margin-top: 10px;
         font-size: smaller;
     }
 
