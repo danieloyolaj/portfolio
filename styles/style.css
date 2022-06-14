@@ -44,7 +44,7 @@ body{
 /* styles for the container */
 .container{
     margin: 0 auto;
-    width: 75%;
+    max-width: 60rem;
     padding: 25px 30px;
     overflow: hidden;
     position: relative;
@@ -80,6 +80,10 @@ a:hover, .active{
 img{
     max-width: 100%;
     height: auto;
+}
+
+.title{
+    font-size: clamp(2rem, 1rem + 10vw, 4rem);
 }
 
 .go-up{
@@ -118,26 +122,29 @@ img{
     column-gap: 100px;
 }
 
+
+
 .header-container > .header > h1{
     font-size: 4rem;
 }
 
 .header-container > .header > p{
-    font-size: x-large;
+    font-size: large;
 }
 
-.header button{
+
+.contactme{
     color: var(--white);
     background-color: var(--violet);
     border: none;
     padding: 15px 32px;
-    margin-top: 30px;
+    margin-top: 30px auto 0 auto;
     text-align: center;
     vertical-align: middle;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    width: 300px;
+    width: 100%;
 }
 
 .header-button{
@@ -156,7 +163,6 @@ img{
 .icon-media{
     display: inline-flex;
     margin-right: 30px;
-    
 }
 
 .icon-media:hover{
@@ -173,9 +179,11 @@ img{
     background-repeat: no-repeat;
     background-position: top center;
 }
+
+
 /* About me */
 .about-me{
-    margin-top: 100px;
+    margin-top: 50px;
     text-align: center;
     font-size: larger;
     color: var(--dark);
@@ -280,7 +288,6 @@ img{
     
 }
 
-
 /* Contact */
 .contact{
     position: relative;
@@ -315,6 +322,7 @@ img{
     color: rgb(192, 192, 192);
 }
 
+
 /* Footer */
 .footer{
     margin-top: 100px;
@@ -326,28 +334,38 @@ img{
 }
 
 
-/* All mobile */
-@media only screen and (max-width:600px) {
-    
-    body{
-        display: block;
-        margin: 0px;
-        padding: 0px;
-    }
+/* Small devices */
+@media only screen and (max-width:500px) {
 
     .container{
-        margin: 0 auto;
-        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .subtitle{
+        margin-top: 10px;
+        font-size: 2rem;
+        text-align: center;
     }
 
     /* Go up button */
     .go-up{
         display: none;
     }
-
   
+    .foto{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
 
-    /* for the hamburger menu (mobile)*/
+    
+    /* Nav bar */
+    .menu-items{
+        display: block;
+    }
+
     .nav > .nav-btn{
         display: inline-block;
         position: absolute;
@@ -385,17 +403,6 @@ img{
         left: 0px;
     }
 
-    .menu-items{
-        display: block;
-    }
-
-    a{
-        font-size: large;
-        width: 100%;
-        padding: 10px;
-        margin: 0px;
-    }
-
    .nav > .nav-bar > ul > li > a:hover{
         color: var(--white);
         background-color: var(--violetlight);
@@ -431,23 +438,13 @@ img{
         font-size: larger;
         text-align: center;
     }
-    .subtitle{
-        font-size: 2rem;
-    }
+    
 
-    .background-lines{
-        width: 85%;
-    }
-
-    .header-button{
-        margin-top: 30px;
-    }
-
-    .header  button{
+    .contactme{
         text-align: center;
         padding: 15px;
-        margin: 30px;
-        width: 200px;
+        margin: 30px auto 0px auto;
+        
     }
 
     .header > button:hover{
@@ -455,13 +452,19 @@ img{
     }
 
     .media-icons{
-        display: inline-block;
+        margin: 20px auto 0px auto;
         text-align: center;
     }
 
     .icon-media{
-        margin: 10px;
-        width: 64px;
+        display: inline-block;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: auto;
+    }
+
+    .title{
+        margin-top: 20px;
     }
 
     .about-me{
@@ -475,12 +478,13 @@ img{
     }
     
     .my-skills{
+        width: 100%;
         margin-top: 70px;
         padding: 0;
         display: block;
     }
     .card{
-        margin: 50px 0 0 0;
+        margin: 30px 0 0 0;
         padding: 15px;
         width: 100%;
         text-align: center;
@@ -488,6 +492,12 @@ img{
     }
 
     /* My Experience */
+    .experience{
+        display: block;
+        width: 100%;
+        margin-top: 30px;
+    }
+
     .card-experience{
         display: block;
         text-align: center;
@@ -507,7 +517,17 @@ img{
         text-align: center;
     }
 
+    /* Portfolio */
+    .portfolio{
+        width: 100%;
+    }
+
     /* Contact */
+    .contact{
+        margin-top: 30px;
+        width: 100%;
+    }
+
     .contact-data img{
         margin: 0;
         padding: 40px;
@@ -521,12 +541,42 @@ img{
         font-size: smaller;
     }
 
+    
     /* Footer */
     .footer{
-        
+        width: 100%;
         padding: 0;
         margin: 50px;
         font-size: smaller;
     }
+}
+
+
+/* // Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 501px) and (max-width: 960px) {
+    .header{
+        display: block;
+    }
+
+    a{
+        font-size: large;
+        width: 100%;
+        padding: 10px;
+        margin: 0px;
+    }
+
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .background-lines > img{
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    /* for the hamburger menu (mobile)*/
+    
 }
 
