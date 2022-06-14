@@ -240,7 +240,7 @@ img{
 .card-experience-year{
     display: inline-block;
     vertical-align: top;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 .card-experience > img{
@@ -320,7 +320,7 @@ img{
     margin-top: 100px;
     margin-bottom: 50px;
     text-align: center;
-    font-size: x-large;
+    font-size: medium;
     color: var(--violet);
     clear: both;
 }
