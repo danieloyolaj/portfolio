@@ -327,7 +327,7 @@ img{
 
 
 /* Small devices */
-@media only screen and (max-width:500px) {
+@media (max-width:651px) {
 
     .container{
         display: flex;
